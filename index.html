@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amor, ¿me conoces? 💕</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="contenedor" id="bienvenida">
+    <h1>Bienvenida mi amor 💖</h1>
+    <p>
+        Este juego tiene dos partes:<br />
+        1️⃣ Qué tanto me conoces<br />
+        2️⃣ Qué tanto nos conoces como pareja<br /><br />
+        ⏳ 10 segundos por pregunta
+    </p>
+    <button class="siguiente" id="btnEmpezar">Empezar 💌</button>
+</div>
+
+<div class="contenedor" id="intermedio" style="display:none;">
+    <h1>💖 Primera parte terminada 💖</h1>
+    <p>Ahora empieza la parte más importante… nosotros 💕</p>
+    <button class="siguiente" id="btnSegunda">Continuar 💕</button>
+</div>
+
+<div class="contenedor" id="juego" style="display:none;">
+    <h1 id="titulo-seccion"></h1>
+
+    <div class="temporizador">
+        <div id="barra-tiempo"></div>
+    </div>
+    <p id="tiempo-texto">⏳ 10s</p>
+
+    <p id="pregunta"></p>
+
+    <div class="respuestas">
+        <button id="btn1"></button>
+        <button id="btn2"></button>
+    </div>
+
+    <button class="siguiente" id="btnSiguiente">Siguiente 💕</button>
+</div>
+
+<div class="contenedor" id="final" style="display:none;">
+    <h1>💖 Fin del juego 💖</h1>
+    <p>Te amo hoy y siempre ❤️</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
